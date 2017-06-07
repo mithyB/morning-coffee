@@ -1,10 +1,10 @@
-import { AbracadabraPage } from './app.po';
+import { MorningCoffeePage } from './app.po';
 
-describe('abracadabra App', () => {
-  let page: AbracadabraPage;
+describe('morning-coffee App', () => {
+  let page: MorningCoffeePage;
 
   beforeEach(() => {
-    page = new AbracadabraPage();
+    page = new MorningCoffeePage();
   });
 
   it('should display welcome message', done => {
