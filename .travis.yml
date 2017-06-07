@@ -10,4 +10,13 @@ before_script:
   - yarn global add @angular/cli
 
 script:
+  - ng lint
+  - ng test --single-run --code-coverage
   - ng build --prod
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  on:
+    branch: master
